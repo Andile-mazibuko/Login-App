@@ -1,0 +1,63 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "userName": "JohnDoe",
+        "email": "johndoe@example.com",
+        "city": "New York",
+        "street": "123 Elm Street",
+        "cellPhone": ["123-456-7890", "987-654-3210"]
+      },
+      {
+        "id": 2,
+        "userName": "JaneSmith",
+        "email": "janesmith@example.com",
+        "city": "Los Angeles",
+        "street": "456 Oak Avenue",
+        "cellPhone": ["555-123-4567", "555-987-6543"]
+      },
+      {
+        "id": 3,
+        "userName": "AlexBrown",
+        "email": "alexbrown@example.com",
+        "city": "Chicago",
+        "street": "789 Pine Road",
+        "cellPhone": ["222-333-4444"]
+      }
+    ],
+    "courses": [
+      {
+        "courseId": 101,
+        "courseName": "Web Development",
+        "courseCode": "WD101",
+        "instructor": "Dr. Smith",
+        "duration": "3 months",
+        "userId": 1
+      },
+      {
+        "courseId": 102,
+        "courseName": "Data Structures",
+        "courseCode": "DS102",
+        "instructor": "Prof. Johnson",
+        "duration": "2 months",
+        "userId": 1
+      },
+      {
+        "courseId": 103,
+        "courseName": "Machine Learning",
+        "courseCode": "ML103",
+        "instructor": "Dr. Kim",
+        "duration": "4 months",
+        "userId": 2
+      },
+      {
+        "courseId": 104,
+        "courseName": "Cloud Computing",
+        "courseCode": "CC104",
+        "instructor": "Prof. Lee",
+        "duration": "6 months",
+        "userId": 3
+      }
+    ]
+  }
+  
