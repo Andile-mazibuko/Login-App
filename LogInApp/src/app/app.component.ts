@@ -21,11 +21,28 @@ export class AppComponent implements OnInit{
         //Assign results to our array
         this.existingUsers = response;
         console.log(this.existingUsers);
+        //;
+        window.alert(this.isUserAvail('JohnDoe').email);
       },
       (error) =>{
         console.error('Api array not found',error);
       }
     );
+  }
+  
+  foundUser!: UserInterface;
+  isUserAvail(name: string): UserInterface
+  {  
+    for(let user of this.existingUsers){
+      
+      if(user.userName == name){
+        this.foundUser = user;
+        break;
+      }
+      
+    }
+
+    return this.foundUser;
   }
   
 }
