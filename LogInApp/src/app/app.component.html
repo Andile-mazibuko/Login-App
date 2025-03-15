@@ -1,28 +1,28 @@
-<div>
+<div [ngClass]="main">
   <form  [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
-    <div>
+    <div [ngClass]="inputBox">
       <label for="username">Username:</label>
       <input type="text" id="username" formControlName="userName">
     </div>
-    <div>
+    <div [ngClass]="inputBox">
       <label for="email">Email:</label>
       <input type="email" id="email" formControlName="email">
 
     </div>
 
     <div formGroupName="address">
-      <span>
+      <span [ngClass]="inputBox">
         <label for="city">City</label>
         <input type="text" formControlName="city" id="city">
       </span>
-      <span>
-        <label for="street">City</label>
+      <span [ngClass]="inputBox">
+        <label for="street">Street</label>
         <input type="text" formControlName="street" id="street">
       </span>
     </div>
 
     <div formArrayName="phoneNumbers">
-      <div *ngFor="let phoneCtrl of getPhoneNumbers.controls; let i = index">
+      <div *ngFor="let phoneCtrl of getPhoneNumbers.controls; let i = index" [ngClass]="inputBox">
         <label for="phoneNumber">Cellphone Number {{ i+1 }}:</label>
         <input type="text" [formControlName]="i" id="phoneNumber">
         <button (click)="removePhoneNumberCtrl(i)">remove</button>

@@ -1,0 +1,31 @@
+.main{
+    width: 50%;
+    background-color: grey;
+    box-shadow: 2px 0px 0 2px gray;
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 5%;
+    border-radius: 10px;
+
+}
+form
+{
+    width: 80%;
+}
+
+.form-box
+{
+    width: 100%;
+    display: flex;
+}
+.form-box label{
+    left: 0;
+}
+.form-box input
+{
+    width: 70%;
+    height: 30px;
+    margin-top: 1%;
+    
+}
+
